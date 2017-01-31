@@ -14,7 +14,7 @@ Pseudorandomness
    at the `Simons Institute <https://simons.berkeley.edu>`_.
    
    A PDF version is available
-   `here <http://simons.github.io/pseudorandomness/pseudorandomness.pdf>`_.
+   `here <http://simons-institute.github.io/pseudorandomness/pseudorandomness.pdf>`_.
 
    .. toctree::
             :maxdepth: 1
