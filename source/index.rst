@@ -9,7 +9,10 @@ A PDF version of the open problems is available
 
 
 .. toctree::
+   :maxdepth: 2
        
    seminar/index.rst
+   groups/index.rst
    open_problems/index.rst
+   reading/index.rst
    references.rst
