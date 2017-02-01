@@ -3,12 +3,11 @@ Groups
 
 We decided to try to have several short-term reading groups, rather than a few spread out ones.  
 
+.. toctree::
+   :maxdepth: 2
 
-Cryptography using Weak Sources of Randomness
----------------------------------------------
+   cryptography
 
-Yevgeniy Dodis will lead a working group on "Cryptography using Weak Sources
-of Randomness" in early Feb.
 
 Learning to Model Structures
 ----------------------------
