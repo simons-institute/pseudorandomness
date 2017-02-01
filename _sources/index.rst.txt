@@ -1,23 +1,15 @@
 Pseudorandomness
 ================
 
-.. only:: latex
+Companion site for the `2017 Pseudorandomness Program <https://simons.berkeley.edu/programs/pseudorandomness2017>`_
+at the `Simons Institute <https://simons.berkeley.edu>`_.
 
-   .. toctree::
-            :maxdepth: 3
-   
-      open_problems/index.rst
+A PDF version is available
+`here <http://simons-institute.github.io/pseudorandomness/pseudorandomness.pdf>`_.
 
-.. only:: html
 
-   Companion site for the `2017 Pseudorandomness Program <https://simons.berkeley.edu/programs/pseudorandomness2017>`_
-   at the `Simons Institute <https://simons.berkeley.edu>`_.
-   
-   A PDF version is available
-   `here <http://simons-institute.github.io/pseudorandomness/pseudorandomness.pdf>`_.
-
-   .. toctree::
-            :maxdepth: 1
-   
-      seminar/index.rst
-      open_problems/index.rst
+.. toctree::
+       
+   seminar/index.rst
+   open_problems/index.rst
+   references.rst
