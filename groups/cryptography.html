@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Groups &#8212; Pseudorandomness Spring 2017 documentation</title>
+    <title>Cryptography using Weak Sources of Randomness &#8212; Pseudorandomness Spring 2017 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -27,8 +27,8 @@
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Cryptography using Weak Sources of Randomness" href="cryptography.html" />
-    <link rel="prev" title="Joint MSRI/SI Seminar" href="../seminar/joint.html" />
+    <link rel="next" title="Open Problems" href="../open_problems/index.html" />
+    <link rel="prev" title="Groups" href="index.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -43,9 +43,9 @@
         <div class="sphinxsidebarwrapper"><h3>Navigation</h3>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../seminar/index.html">Seminars</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Groups</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cryptography.html">Cryptography using Weak Sources of Randomness</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#learning-to-model-structures">Learning to Model Structures</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Groups</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Cryptography using Weak Sources of Randomness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#learning-to-model-structures">Learning to Model Structures</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../open_problems/index.html">Open Problems</a></li>
@@ -70,21 +70,30 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="groups">
-<h1>Groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h1>
-<p>We decided to try to have several short-term reading groups, rather than a few spread out ones.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="cryptography.html">Cryptography using Weak Sources of Randomness</a></li>
-</ul>
-</div>
-<div class="section" id="learning-to-model-structures">
-<h2>Learning to Model Structures<a class="headerlink" href="#learning-to-model-structures" title="Permalink to this headline">¶</a></h2>
-<p>Russell Impagliazzo will lead a group on &#8220;Learning to
-Model Structures&#8221;, about connections between boosting, dense model theorems
-and regularity lemmas, probably in mid Feb.</p>
-<p>Other topics will follow.</p>
-</div>
+  <div class="section" id="cryptography-using-weak-sources-of-randomness">
+<h1>Cryptography using Weak Sources of Randomness<a class="headerlink" href="#cryptography-using-weak-sources-of-randomness" title="Permalink to this headline">¶</a></h1>
+<p>This is a vast topic. You can see some videos of relevant topics here (including 4 hours of my lectures):
+<a class="reference external" href="http://eventum.upf.edu/5484/videos/cost-iacr-school-on-randomness-in-cryptography.html">http://eventum.upf.edu/5484/videos/cost-iacr-school-on-randomness-in-cryptography.html</a></p>
+<p>Briefly, I would like to cover the following areas (order might change depending on preferences):</p>
+<ol class="arabic simple">
+<li>Key Derivation vs. Randomness extraction (improved entropy loss for deriving cryptographic keys).
+This could be used as &#8220;extractors/PRGs fooling cryptographic security games&#8221;. Should connect well with
+Luca&#8217;s tutorial.</li>
+<li>Impossibility of Cryptography with Weak Randomness (includes some fun open questions about
+randomness extraction from Bitcoin :)).</li>
+<li>Privacy amplification. Will include topics such as non-malleable codes. I will give some intro, and Xin
+or David can comment about state-of-the-art</li>
+<li>Extractors with special properties (local computability, error-correction, authentication, invertibility).</li>
+<li>Random Oracle with Auxiliary input and Extractors. New stuff (upcoming Eurocrypt paper).</li>
+<li>Entropy estimation, entropy accumulation and RNGs&#8212;huge challenge where our input is needed.</li>
+<li>Improved Computational Extractors and Dense model theorem.</li>
+</ol>
+<p>I plan to do this Mon-Thu February 6-9. Flexible about the time, except Monday will have to be after lunch.
+Probably need at least 2 hours a day, but probably less than 3. We will unlikely cover all the topics, but can start.
+And, if there is interest, we can continue starting March 6.</p>
+<p>Feel free to email to me if you are interested to attend all/most days, or with any comments you have.
+Thanks,
+Yevgeniy</p>
 </div>
 
 
@@ -101,7 +110,7 @@ and regularity lemmas, probably in mid Feb.</p>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
       
       |
-      <a href="../_sources/groups/index.rst.txt"
+      <a href="../_sources/groups/cryptography.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 
