@@ -1,5 +1,5 @@
 Cryptography using Weak Sources of Randomness
-============================================
+=============================================
 
 This is a vast topic. You can see some videos of relevant topics here (including 4 hours of my lectures):
 http://eventum.upf.edu/5484/videos/cost-iacr-school-on-randomness-in-cryptography.html
