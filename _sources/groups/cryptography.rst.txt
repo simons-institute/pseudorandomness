@@ -1,5 +1,11 @@
-Cryptography using Weak Sources of Randomness
-=============================================
+Cryptography using Weak Sources of Randomness (Feb 6--Feb9)
+===========================================================
+
+- Monday (Feb 6), 1--2 p.m.
+- Tuesday (Feb 7), 2--3:30 p.m.
+- Wednesday (Feb 8),  4--6 p.m
+- Thursdays (Feb 9), 2--3:30 p.m. 
+
 
 This is a vast topic. You can see some videos of relevant topics here (including 4 hours of my lectures):
 http://eventum.upf.edu/5484/videos/cost-iacr-school-on-randomness-in-cryptography.html

@@ -13,6 +13,5 @@ tell the co-ordinators the topic you want to hear about.
 Schedule
 --------
 
-- Thursday, Feb. 9th
 - Thursday, Feb. 16th
 - Thursday, Feb. 23rd
