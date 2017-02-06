@@ -4,7 +4,7 @@ Expanders and Extractors
 Open Problems presented at the Simons Workshop on Expanders and Extractors, January 30-Feb. 3, 2017
 ---------------------------------------------------------------------------------------------------
 
-Compiled by Alon Noga. 
+Compiled by Noga Alon. 
 
 **Partial Steiner systems of large girth, Nati Linial**
 
