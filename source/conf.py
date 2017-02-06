@@ -95,8 +95,6 @@ html_sidebars = {
     ]
 }
 html_theme_options = {
-    'github_user': 'simons-institute',
-    'github_repo': 'pseudorandomness',
     'fixed_sidebar': True,
 }
 
