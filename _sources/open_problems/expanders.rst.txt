@@ -31,7 +31,7 @@ $\lambda$. Let $G$ be an $(n,d,100\sqrt d)$-graph. It is known that:
 1. There is a constant $c>0$ so that if $d \geq cn^{2/3}$ then $G$
    contains a triangle.
 
-2. The statement in (i) is tight up to the constant  $c$.
+2. The statement in (1) is tight up to the constant  $c$.
 
 3. There is a constant $c>0$ so that if $d \geq cn^{4/5}$ then
    $G$ contains a copy of $K_4$.
