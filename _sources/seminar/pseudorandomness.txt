@@ -41,7 +41,8 @@ Schedule
   and covers the topic of "Samplers" which was omitted from the original
   sequence of lectures due to lack of time.
 
-  Lightning talks:  TBD
+  Lightning talk:  `Arnab Bhattacharyya <http://drona.csa.iisc.ernet.in/~arnabb/>`_
+  will present "Improved bounds for universal one-bit compressed sensing."
 
 - Tuesday, Feb. 14th
 - Tuesday, Feb. 21th
