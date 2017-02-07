@@ -7,7 +7,7 @@ Cryptography using Weak Sources of Randomness (Feb 6--Feb 9)
 Open Problems presented by Yevgeniy Dodis at the Simons Working Group on Cryptography using Weak Sources of Randomness.
 
 :math:`\mathbf{IP\mbox{-}weak} = \mathbf{IP}`
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Is $\mathbf{IP\mbox{-}weak} = \mathbf{IP}$? Note, only one weak source and must be conditional (e.g., $\mathbf{IP} \neq \mathbf{AM}$).
 
