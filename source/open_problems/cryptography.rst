@@ -18,15 +18,15 @@ source parameterized by $\gamma$, $n$ and $b$.
 
 repeat the following steps until $n$ $b$-bit blocks output:
 
-a) sample random $b$-bit $X$
+#. sample random $b$-bit $X$
 
-b) sample a coin which is 1 with probability $1-\gamma$.
+#. sample a coin which is 1 with probability $1-\gamma$.
 
-c) if coin=0, output $X$ as next block and go to step a.
+#. if coin=0, output $X$ as next block and go to step 1.
 
-d) if coin=1, ask attacker if he wants to block $X$ or not
+#. if coin=1, ask attacker if he wants to block $X$ or not
 
-e) if block, don't output anything and go to step a, else output $X$ and go to step a.
+#. if block, don't output anything and go to step 1, else output $X$ and go to step 1.
 
 Goal: extract (for now 1) $\varepsilon$-unbiased bit from such $X_1\dots X_n$
 

@@ -178,7 +178,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ('open_problems/tex_index', 'pseudorandomness.tex', u'Pseudorandomness Program',
+    ('open_problems/tex_index', 'pseudorandomness.tex', u'Pseudorandomness Program\\\\Open Problems',
      u'Simons Institute', 'howto'),
 ]
 
