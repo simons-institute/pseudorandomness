@@ -1,10 +1,10 @@
 Cryptography
 ============
 
-Pseudorandomness and cryptography
----------------------------------
+Cryptography using Weak Sources of Randomness (Feb 6--Feb 9)
+------------------------------------------------------------
 
-Presented by Yevgeniy Dodis
+Open Problems presented by Yevgeniy Dodis at the Simons Working Group on Cryptography using Weak Sources of Randomness.
 
 :math:`\mathbf{IP\mbox{-}weak} = \mathbf{IP}`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

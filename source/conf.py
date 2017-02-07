@@ -169,6 +169,9 @@ latex_elements = {
     # Latex figure (float) alignment
     #
     # 'figure_align': 'htbp',
+
+    # Value that prefixes 'release' element on title page, default 'Release'.
+     'releasename': '',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -176,7 +179,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     ('open_problems/tex_index', 'pseudorandomness.tex', u'Pseudorandomness Program',
-     u'Simons Institute', 'manual'),
+     u'Simons Institute', 'howto'),
 ]
 
 

@@ -1,12 +1,15 @@
 Expanders and Extractors
 ========================
 
-Open Problems presented at the Simons Workshop on Expanders and Extractors, January 30-Feb. 3, 2017
----------------------------------------------------------------------------------------------------
+Expanders and Extractors Workshop (Jan 30--Feb 3)
+-------------------------------------------------
+
+Open Problems presented at the Simons Workshop on Expanders and Extractors.
 
 Compiled by Noga Alon. 
 
-**Partial Steiner systems of large girth, Nati Linial**
+Partial Steiner systems of large girth, Nati Linial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Let us first recall that the *girth* of a graph $G$ is the least integer
 $g$ such that there is a set of $g$ vertices in $G$ that spans at least $g$
@@ -22,7 +25,8 @@ is quite bad. I therefore formulate a variant that may be more accessible:
 Question: Does there exist $c>0$ and $n$-vertex $3$-uniform hypergraphs with
 at least $cn^2$ hyperedges and arbitrarily high girth?
 
-**Cliques in near Ramanujan Graphs, Noga Alon**
+Cliques in near Ramanujan Graphs, Noga Alon
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 An $(n,d, \lambda)$-graph is a $d$-regular graph on $n$ vertices so
 that all eigenvalues but the top one are in absolute value at most
@@ -42,7 +46,8 @@ That is, is there an $(n,d,100\sqrt d)$-graph containing no $K_4$, where
 $d =\Omega(n^{4/5})$?
 It is not even known whether or not there is such a graph with $n^{2/3} =o(d)$.
 
-**On the extractable entropy from zero-fixing sources, Gil Cohen**
+On the extractable entropy from zero-fixing sources, Gil Cohen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let $n \ge k \ge 0$ be integers. An $n$-bit random variable $X$ is called
 a $k$-*zero-fixing source* if there exists a subset of indices
@@ -77,7 +82,8 @@ exists a function $\tau(n)$ such that for $k = \omega(\tau(n))$,
 $m(n,k)
 = k - O(1)$ whereas for $k = o(\tau(n))$, $m(n,k) \le 0.5 \log_2{k} + O(1)$.
 
-**Beating the expander mixing lemma for small sets, David Zuckerman**
+Beating the expander mixing lemma for small sets, David Zuckerman
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The expander mixing lemma asserts that in a $d$-regular
 graph $G$ on $n$ nodes,
@@ -101,7 +107,8 @@ For dense graphs, this corresponds to two-source extractors.
 Bounds on line-point incidence graphs are also known.
 It would be extremely interesting to have a general method.
 
-**Spectral radius problem for free groups, Emmanuel Breuillard**
+Spectral radius problem for free groups, Emmanuel Breuillard
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If $\mu$ is a probability measure on a non-abelian free
 group $F$, let $\sigma(\mu):=\|T_\mu\|$ be the norm of the
@@ -118,17 +125,16 @@ the condition $\sigma(\mu)>\epsilon$ implies that there is a
 coset $xH$ of a cyclic subgroup $H$ of $F$ such that
 $\mu(xH)>\delta$?
 
-**Explicit Coding Power Series, Anup Rao**
+Explicit Coding Power Series, Anup Rao
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We are interested in giving an explicit description of a formal
 power-series over a finite field $F$ with some nice properties. The
 motivation comes from several applications related to coding.
 
-We say that a power series $P(X) = p_0 + p_1 X + \ldots$
-is
+We say that a power series $P(X) = p_0 + p_1 X + \ldots$ is
 $\epsilon$-*sparse* if there is a finite $k$ such that of the first
-$k$
-coefficients of $P(X)$, at most $\epsilon k$ of them are non-zero.
+$k$ coefficients of $P(X)$, at most $\epsilon k$ of them are non-zero.
 
 Definition: $P(X)$ is an $\epsilon$-*coding power series* if for every
 polynomial $g(X)$ with $0/1$ coefficients, the power series
