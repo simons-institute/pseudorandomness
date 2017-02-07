@@ -17,8 +17,7 @@
         VERSION:     'Spring 2017',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
@@ -27,6 +26,8 @@
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Pseudorandomness Spring 2017 documentation" href="../index.html" />
+    <link rel="up" title="Open Problems" href="index.html" />
     <link rel="next" title="Expanders and Extractors" href="expanders.html" />
     <link rel="prev" title="Additive Combinatorics" href="additive_combinatorics.html" />
    
@@ -73,11 +74,31 @@
             
   <div class="section" id="cryptography">
 <h1>Cryptography<a class="headerlink" href="#cryptography" title="Permalink to this headline">¶</a></h1>
-<div class="thm problem">
-<div class="thm_caption problem_caption">Problem<span class="thm_counter problem_counter">2</span><span class="thm_title problem_title"> (submitted by Pseudonym) </span></div>
-<div class="thm_body problem_body"><p class="first">Given a graph <span class="math">\(G\)</span>.</p>
-<p class="last">See <a class="reference internal" href="../references.html#vadhan2012pseudorandomness" id="id1">[Vad12]</a>.</p>
-</div></div>
+<div class="section" id="cryptography-using-weak-sources-of-randomness-feb-6-feb-9">
+<h2>Cryptography using Weak Sources of Randomness (Feb 6&#8211;Feb 9)<a class="headerlink" href="#cryptography-using-weak-sources-of-randomness-feb-6-feb-9" title="Permalink to this headline">¶</a></h2>
+<p>Open Problems presented by Yevgeniy Dodis at the Simons Working Group on Cryptography using Weak Sources of Randomness.</p>
+<div class="section" id="id1">
+<h3><span class="math">\(\mathbf{IP\mbox{-}weak} = \mathbf{IP}\)</span><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Is <span class="math">\(\mathbf{IP\mbox{-}weak} = \mathbf{IP}\)</span>? Note, only one weak source and must be conditional (e.g., <span class="math">\(\mathbf{IP} \neq \mathbf{AM}\)</span>).</p>
+</div>
+<div class="section" id="extraction-from-limited-bit-coin-source">
+<h3>Extraction from limited &#8220;bit-coin source&#8221;<a class="headerlink" href="#extraction-from-limited-bit-coin-source" title="Permalink to this headline">¶</a></h3>
+<p>source parameterized by <span class="math">\(\gamma\)</span>, <span class="math">\(n\)</span> and <span class="math">\(b\)</span>.</p>
+<p>repeat the following steps until <span class="math">\(n\)</span> <span class="math">\(b\)</span>-bit blocks output:</p>
+<ol class="loweralpha simple">
+<li>sample random <span class="math">\(b\)</span>-bit <span class="math">\(X\)</span></li>
+<li>sample a coin which is 1 with probability <span class="math">\(1-\gamma\)</span>.</li>
+<li>if coin=0, output <span class="math">\(X\)</span> as next block and go to step a.</li>
+<li>if coin=1, ask attacker if he wants to block <span class="math">\(X\)</span> or not</li>
+<li>if block, don&#8217;t output anything and go to step a, else output <span class="math">\(X\)</span> and go to step a.</li>
+</ol>
+<p>Goal: extract (for now 1) <span class="math">\(\varepsilon\)</span>-unbiased bit from such <span class="math">\(X_1\dots X_n\)</span></p>
+<p>Known: impossible if <span class="math">\(A\)</span> can block unbounded number of times.</p>
+<p>So let&#8217;s limit number of blocked times by <span class="math">\(t\)</span></p>
+<p>Question 1: <span class="math">\(b=1\)</span>. given <span class="math">\(t\)</span>, <span class="math">\(\varepsilon\)</span>, <span class="math">\(\gamma\)</span>, what is smallest <span class="math">\(n\)</span> for which possible?</p>
+<p>Question 2: given <span class="math">\(t\)</span>, <span class="math">\(\varepsilon\)</span>, <span class="math">\(\gamma\)</span>, what is smallest alphabet <span class="math">\(b\)</span> for which can set <span class="math">\(n=t+1\)</span>.</p>
+</div>
+</div>
 </div>
 
 
@@ -90,11 +111,11 @@
       &copy;2017, Simons Institute.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.9</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
       
       |
-      <a href="../_sources/open_problems/cryptography.rst.txt"
+      <a href="../_sources/open_problems/cryptography.txt"
           rel="nofollow">Page source</a>
     </div>
 
