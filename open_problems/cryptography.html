@@ -85,12 +85,12 @@
 <h3>Extraction from limited &#8220;bit-coin source&#8221;<a class="headerlink" href="#extraction-from-limited-bit-coin-source" title="Permalink to this headline">¶</a></h3>
 <p>source parameterized by <span class="math">\(\gamma\)</span>, <span class="math">\(n\)</span> and <span class="math">\(b\)</span>.</p>
 <p>repeat the following steps until <span class="math">\(n\)</span> <span class="math">\(b\)</span>-bit blocks output:</p>
-<ol class="loweralpha simple">
+<ol class="arabic simple">
 <li>sample random <span class="math">\(b\)</span>-bit <span class="math">\(X\)</span></li>
 <li>sample a coin which is 1 with probability <span class="math">\(1-\gamma\)</span>.</li>
-<li>if coin=0, output <span class="math">\(X\)</span> as next block and go to step a.</li>
+<li>if coin=0, output <span class="math">\(X\)</span> as next block and go to step 1.</li>
 <li>if coin=1, ask attacker if he wants to block <span class="math">\(X\)</span> or not</li>
-<li>if block, don&#8217;t output anything and go to step a, else output <span class="math">\(X\)</span> and go to step a.</li>
+<li>if block, don&#8217;t output anything and go to step 1, else output <span class="math">\(X\)</span> and go to step 1.</li>
 </ol>
 <p>Goal: extract (for now 1) <span class="math">\(\varepsilon\)</span>-unbiased bit from such <span class="math">\(X_1\dots X_n\)</span></p>
 <p>Known: impossible if <span class="math">\(A\)</span> can block unbounded number of times.</p>
