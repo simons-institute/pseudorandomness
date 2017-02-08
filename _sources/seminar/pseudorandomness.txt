@@ -44,6 +44,16 @@ Schedule
   Lightning talk:  `Arnab Bhattacharyya <http://drona.csa.iisc.ernet.in/~arnabb/>`_
   will present "Improved bounds for universal one-bit compressed sensing."
 
-- Tuesday, Feb. 14th
+- **ML** Tuesday, Feb. 14th
 - Tuesday, Feb. 21th
 - Tuesday, Feb. 28th
+- **PR** Tuesday, Mar. 7th
+- Tuesday, Mar. 14th
+- Tuesday, Mar. 21st
+- **ML** Tuesday, Mar. 28th
+- Tuesday, Apr. 4th
+- **PR** Tuesday, Apr. 11th
+- Tuesday, Apr. 18th
+- Tuesday, Apr. 25th
+- **ML** Tuesday, May 2nd
+- Tuesday, May 9th
