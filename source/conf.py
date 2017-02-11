@@ -29,9 +29,9 @@ sys.path.append(os.path.abspath('_sphinxext'))
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinxcontrib.thm',
-    'sphinx.ext.mathjax',
+extensions = [
     'sphinx.ext.githubpages',
+    'sphinx.ext.mathjax',
     'sphinxcontrib.bibtex',
     'math_dollar'
         ]
@@ -118,40 +118,7 @@ htmlhelp_basename = 'Pseudorandomnessdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
-preamble = r"""
-%preamble for sphinxcontrib-thm
-\usepackage{amsthm}%\usepackage{ntheorem} works too
-\theoremstyle{plain}
-\newtheorem{theorem}{Theorem}
-\newtheorem{lemma}{Lemma}
-\newtheorem{corollary}{Corollary}
-\newtheorem{proposition}{Proposition}
-\newtheorem{conjecture}{Conjecture}
-\newtheorem{criterion}{Criterion}
-\newtheorem{assertion}{Assertion}
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}
-\newtheorem{condition}{Condition}
-\newtheorem{problem}{Problem}
-\newtheorem{example}{Example}
-\newtheorem{exercise}{Exercise}
-\newtheorem{algorithm}{Algorithm}
-\newtheorem{question}{Question}
-\newtheorem{axiom}{Axiom}
-\newtheorem{property}{Property}
-\newtheorem{assumption}{Assumption}
-\newtheorem{hypothesis}{Hypothesis}
-\theoremstyle{remark}
-\newtheorem{remark}{Remark}
-\newtheorem{notation}{Notation}
-\newtheorem{claim}{Claim}
-\newtheorem{summary}{Summary}
-\newtheorem{acknowledgment}{Acknowledgment}
-\newtheorem{case}{Case}
-\newtheorem{conclusion}{Conclusion}
-\newtheorem{instruction}{Instruction}%because we used .. environment:: instruction
-%\newtheorem{proof}{Proof} for ntheorem
-"""
+# preamble = r""" """
 
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
@@ -164,7 +131,7 @@ latex_elements = {
 
     # Additional stuff for the LaTeX preamble.
     #
-     'preamble': preamble,
+    # 'preamble': preamble,
 
     # Latex figure (float) alignment
     #
