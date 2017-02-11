@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Learning to Model Structures (mid Feb) &#8212; Pseudorandomness Spring 2017 documentation</title>
+    <title>Learning to Models of Mathematical Objects (Feb 21–23) &#8212; Pseudorandomness Spring 2017 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -46,7 +46,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../seminar/index.html">Seminars</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Groups</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="cryptography.html">Cryptography using Weak Sources of Randomness (Feb 6&#8211;Feb 9)</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Learning to Model Structures (mid Feb)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Learning to Models of Mathematical Objects (Feb 21&#8211;23)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../open_problems/index.html">Open Problems</a></li>
@@ -71,15 +71,87 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="learning-to-model-structures-mid-feb">
-<h1>Learning to Model Structures (mid Feb)<a class="headerlink" href="#learning-to-model-structures-mid-feb" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="learning-to-models-of-mathematical-objects-feb-21-23">
+<h1>Learning to Models of Mathematical Objects (Feb 21&#8211;23)<a class="headerlink" href="#learning-to-models-of-mathematical-objects-feb-21-23" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li>Tuesday (TBD), 2&#8211;3:30 p.m.</li>
-<li>Thursdays (TBD), 2&#8211;3:30 p.m.</li>
+<li>Tuesday (Feb 21), 2&#8211;3:30 p.m.</li>
+<li>Thursday (Feb 23), 2&#8211;3:30 p.m.</li>
 </ul>
-<p>Russell Impagliazzo will lead a group on &#8220;Learning to
-Model Structures&#8221;, about connections between boosting, dense model theorems
-and regularity lemmas, probably in mid Feb.</p>
+<p>A theme that cuts across many domains of computer science and mathematics is to
+find simple representations of complex mathematical objects such as graphs,
+functions, or distributions on data.   These representations need to capture
+how the  object interacts with a class of tests, and to approximately determine
+the outcome of these tests.</p>
+<p>For example, in machine learning, the object might be a distribution on data
+points, high dimensional real vectors, and the tests might be half-spaces.  The
+goal would be to learn a simple representation of the data that determines the
+probability of any half-space or possibly intersections of half spaces.  In
+computational complexity, the object might be a Boolean function or
+distribution on strings, and the tests are functions of low circuit complexity.
+In graph theory, the object is a large graph, and the tests are the cuts In the
+graph; the representation should determine approximately the size of any cut.
+In additive combinatorics, the object might be a function or distribution over
+an Abelian group, and the tests might be correlations with linear functions or
+polynomials.</p>
+<p>The focus of the working group is to understand the common elements that
+underlie results in all of these areas, to use the connections between them to
+make existential results algorithmic, and to then use algorithmic versions of
+these results for new purposes.   For example, can we use boosting, a technique
+from supervised learning, in an unsupervised context? Can we characterize the
+pseudo-entropy of distributions, a concept arising in cryptography?   Do the
+properties of dense graphs &#8220;relativize&#8221; to sub-graphs of expanders?</p>
+<p>In particular, we&#8217;ll start from boosting, a technique in machine learning to go
+from weak learning to strong learning, i.e., taking an algorithm that learns a
+function only with a small correlation and making one that learns the function
+on almost all inputs.   We&#8217;ll show how boosting implies a general Hardcore
+Distribution Lemma, showing that any  function that cannot be <span class="math">\(1 - \delta\)</span>
+approximated by simple functions has a sub-distribution of size <span class="math">\(\delta\)</span> where
+it has almost no correlation with simple functions.  By starting from boosting,
+we will be able to show a constructive version of this lemma.  From the
+Hardcore Distribution lemma, we&#8217;ll derive the Dense Model Theorem used by Green
+and Tao to show arbitrarily long arithmetic progressions in the primes.  Again,
+by starting with boosting, we get a general algorithmic version of DMT.  This
+algorithmic version can then be used to derive a general Weak Regularity
+Theorem, with that of Frieze and Kannan  and analogs for sparse graphs  as a
+special case.</p>
+<p>Hopefully, at this point, the working group will segue from known connections
+to new connections, e.g., is there a strong boosting that implies strong
+regularity?  Can algorithmic regularity lemmas be used in ML?</p>
+<p>We won&#8217;t assume any background and will develop everything from first
+principles using only simple calculations.  Here&#8217;s an optional reading list,
+and some papers we might refer to.</p>
+<p>Papers with results we&#8217;ll cover:</p>
+<p>Klivans and Servedio, Boosting and Hard-core Sets, FOCS 99.</p>
+<p>Omer Reingold, Luca Trevisan, Madhur Tulsiani, Salil P. Vadhan:
+Dense Subsets of Pseudorandom Sets. FOCS 2008: 76-85</p>
+<p>Luca Trevisan, Madhur Tulsiani, Salil P. Vadhan:
+Regularity, Boosting, and Efficiently Simulating Every High-Entropy Distribution. IEEE Conference on Computational Complexity 2009: 126-136</p>
+<p>Russell Impagliazzo, Algorithmic Dense Model Theorems and Weak Regularity (unpublished, attached)</p>
+<p>Sita Gakkhar Russell Impagliazzo Valentine Kabanets</p>
+<p>Hardcore Measures, Dense Models and Low Complexity Approximations (unpublished, attached)</p>
+<p>Bibliography</p>
+<p>We won&#8217;t go through these papers explicitly, but they provide the context.</p>
+<p>Robert E. Schapire:
+The Strength of Weak Learnability (Extended Abstract). FOCS 1989: 28-33</p>
+<p>: 01 June 2005
+A desicion-theoretic generalization of on-line learning and an application to boosting
+Yoav Freund, Robert E. Schapire</p>
+<p>Yoav Freund, Robert E. Schapire:
+Game Theory, On-Line Prediction and Boosting. COLT 1996: 325-332</p>
+<p>Russell Impagliazzo:
+Hard-Core Distributions for Somewhat Hard Problems. FOCS 1995: 538-545</p>
+<p>Thomas Holenstein:
+Key agreement from weak bit agreement. STOC 2005: 664-673</p>
+<p>Boaz Barak, Ronen Shaltiel, Avi Wigderson:
+Computational Analogues of Entropy. RANDOM-APPROX 2003: 200-215</p>
+<p>Alan M. Frieze, Ravi Kannan:
+The Regularity Lemma and Approximation Schemes for Dense Problems. FOCS 1996: 12-20</p>
+<p>Noga Alon, Amin Coja-Oghlan, Hiêp Hàn, Mihyun Kang, Vojtech Rödl, Mathias Schacht:
+Quasi-Randomness and Algorithmic Regularity for Graphs with General Degree Distributions. SIAM J. Comput. 39(6): 2336-2362(2010)</p>
+<p>Noga Alon, Assaf Naor:
+Approximating the Cut-Norm via Grothendieck&#8217;s Inequality. SIAM J. Comput. 35(4): 787-803 (2006)</p>
+<p>Green, Ben; Tao, Terence (2008). &#8220;The primes contain arbitrarily long arithmetic progressions&#8221;. Annals of Mathematics. 167 (2): 481–547.</p>
+<p>Tao, Terence; Ziegler, Tamar (2008). &#8220;The primes contain arbitrarily long polynomial progressions&#8221;. Acta Mathematica. 201 (2): 213–305</p>
 </div>
 
 
