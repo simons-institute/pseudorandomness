@@ -17,7 +17,8 @@
         VERSION:     'Spring 2017',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
@@ -26,8 +27,6 @@
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="top" title="Pseudorandomness Spring 2017 documentation" href="../index.html" />
-    <link rel="up" title="Seminars" href="index.html" />
     <link rel="next" title="Joint MSRI/SI Seminar" href="joint.html" />
     <link rel="prev" title="Seminars" href="index.html" />
    
@@ -111,48 +110,20 @@ will present &#8220;Improved bounds for universal one-bit compressed sensing.&#8
 </li>
 <li><p class="first">Tuesday, Feb. 14th</p>
 <p><a class="reference external" href="http://www.math.ias.edu/avi/home">Avi Wigderson</a>
-&#8220;A gentle introduction to Brascamp-Lieb inequalities, and why I like them&#8221;</p>
-<p>It is based on a STOC&#8216;17 paper below (title &amp; abstract below).</p>
-<p>Algorithmic and optimization aspects of Brascamp-Lieb inequalities, via Operator Scaling</p>
-<p>Ankit Garg, Leonid Gurvits, Rafael Olivera  and Avi Wigderson</p>
-<p>Abstract:</p>
-<p>The celebrated Brascamp-Lieb (BL) inequalities [BL76,Lieb90], and their reverse
-form of Barthe [Barthe2], are an important mathematical tool, unifying and
-generalizing numerous inequalities in analysis, convex geometry and information
-theory, with many used in computer science. While their structural theory is
-very well understood, far less is known about computing their main parameters
-(which we later define below). Prior to this work, the best known algorithms
-for any of these optimization tasks required at least exponential time.  In
-this work, we give polynomial time algorithms to compute:</p>
-<ol class="arabic simple">
-<li>Feasibility of BL-datum,</li>
-<li>Optimal BL-constant,</li>
-<li>Weak separation oracle for BL-polytopes.</li>
-</ol>
-<p>What is particularly exciting about this progress, beyond the better
-understanding of BL-inequalities, is that the objects above naturally encode
-rich families of optimization problems which had no prior efficient algorithms.
-In particular, the BL-constants (which we efficiently compute) are solutions to
-non-convex optimization problems, and the BL-polytopes (for which we provide
-efficient membership and separation oracles)  are linear programs with
-exponentially many facets. Thus we hope that new combinatorial optimization
-problems can be solved via reductions to the ones above, and make modest
-initial steps in exploring this possibility.</p>
-<p>Our algorithms are obtained by a simple efficient reduction of a given BL-datum
-to an instance of the Operator Scaling problem defined by [Gurvits2004]. To
-obtain the results above, we utilize the two (very recent and different)
-algorithms for the operator scaling problem [GGOW, IQS15b].  Our reduction
-implies algorithmic versions of many of the known structural results on
-BL-inequalities, and in some cases provide proofs that are different or simpler
-than existing ones. Further, the analytic properties of the [GGOW] algorithm
-provide new, effective bounds on the magnitude and continuity of BL-constants,
-with applications to non-linear versions of BL-inequalities; prior work relied
-on compactness, and thus provided no bounds.</p>
-<p>On a higher level, our application of operator scaling algorithm to
-BL-inequalities further connects analysis and optimization with the diverse
-mathematical areas used so far to motivate and solve the operator scaling
-problem, which include commutative invariant theory, non-commutative algebra,
-computational complexity and quantum information theory.</p>
+&#8220;A gentle introduction to Brascamp&#8211;Lieb inequalities, and why I like them&#8221;</p>
+<p>The celebrated Brascamp&#8211;Lieb (BL) inequalities  are an important mathematical
+tool, unifying and generalizing numerous inequalities in analysis, convex
+geometry and information theory, with many used in computer science. While
+their structural theory is very well understood, far less is known about
+computing their main parameters. Prior to this work, the best known
+algorithms for any of these optimization tasks required at least exponential
+time. In this work, we give polynomial time algorithms to compute them. In
+particular, these efficiently solve a large family of linear programs with
+exponentially many facets, something which can be used for combinatorial
+optimization. Both algorithms and analysis rely on our previous Operator
+Scaling algorithm, and combine interesting math from several diverse fields.
+However, no prior knowledge will be assumed for this talk.</p>
+<p>Joint work with Ankit Garg, Leonid Gurvits and Rafael Olivera</p>
 <p><strong>Lightning talk:</strong> TBA</p>
 </li>
 <li><p class="first">Tuesday, Feb. 21th</p>
@@ -193,11 +164,11 @@ computational complexity and quantum information theory.</p>
       &copy;2017, Simons Institute.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.9</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
       
       |
-      <a href="../_sources/seminar/pseudorandomness.txt"
+      <a href="../_sources/seminar/pseudorandomness.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

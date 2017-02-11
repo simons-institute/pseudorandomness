@@ -17,7 +17,8 @@
         VERSION:     'Spring 2017',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
@@ -26,8 +27,6 @@
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="top" title="Pseudorandomness Spring 2017 documentation" href="../index.html" />
-    <link rel="up" title="Open Problems" href="index.html" />
     <link rel="next" title="Reading Lists" href="../reading/index.html" />
     <link rel="prev" title="Cryptography" href="cryptography.html" />
    
@@ -134,10 +133,10 @@ is, when the entropy <span class="math">\(k\)</span> is high enough, one can ext
 all the entropy from the source. What about smaller entropies? For any
 <span class="math">\(k\)</span>, <span class="math">\(m(n,k) \ge 0.5 \log_2{k} - O(1)\)</span> as can be seen by considering
 the function that takes the Hamming weight of the input <span class="math">\(X\)</span> modulo
-<span class="math">\(\Theta(\sqrt{k})\)</span> <a class="reference internal" href="../references.html#kamp2006deterministic" id="id1">[KZ06]</a><a class="reference internal" href="../references.html#reshef2013extractors" id="id2">[RV13]</a>. That is to say, a logarithmic amount
+<span class="math">\(\Theta(\sqrt{k})\)</span> <a class="reference internal" href="zreferences.html#kamp2006deterministic" id="id1">[KZ06]</a><a class="reference internal" href="zreferences.html#reshef2013extractors" id="id2">[RV13]</a>. That is to say, a logarithmic amount
 of entropy is always extractable. Interestingly, this simple function is
 optimal for small enough <span class="math">\(k\)</span>. Put formally, <span class="math">\(m(n,(\log^{\ast}{n})^{2/3})
-\le 0.5 \log_2{k} + O(1)\)</span> <a class="reference internal" href="../references.html#cohen2015zero" id="id3">[CS15]</a>. The natural open problem is
+\le 0.5 \log_2{k} + O(1)\)</span> <a class="reference internal" href="zreferences.html#cohen2015zero" id="id3">[CS15]</a>. The natural open problem is
 to understand the behavior of <span class="math">\(m(n,k)\)</span> and close the gap between <span class="math">\(k =
 \Omega(\log\log{n})\)</span> and <span class="math">\(k = O((\log^{\ast}{n})^{2/3})\)</span>. In particular,
 it is not clear if <span class="math">\(m(n,k)\)</span> has a threshold behavior, namely, if there
@@ -211,11 +210,11 @@ probability.</p>
       &copy;2017, Simons Institute.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.9</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
       
       |
-      <a href="../_sources/open_problems/expanders.txt"
+      <a href="../_sources/open_problems/expanders.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 
