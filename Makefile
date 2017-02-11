@@ -42,8 +42,12 @@ latexpdf: latex
 	@echo "Running LaTeX files through pdflatex..."
 	@echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex."
 
+.PHONY: pdf
+pdf: latexpdf
+	make latexpdf
+
 .PHONY: github
-github: html latexpdf
+github: clean pdf html
 	cp $(BUILDDIR)/latex/pseudorandomness.pdf $(BUILDDIR)/html/.
 	ghp-import $(BUILDDIR)/html
 	git push origin gh-pages --force
