@@ -64,9 +64,30 @@ Schedule
 
   Joint work with Ankit Garg, Leonid Gurvits and Rafael Olivera
 
+- Tuesday, Feb. 21th
+
+  Manuel Sabin (UC Berkeley)
+  "Average-Case Fine-Grained Hardness"
+
+  We present functions that are hard to compute on average for algorithms running
+  in some fixed polynomial time, assuming widely-conjectured worst-case hardness
+  for Orthogonal Vectors (OV), 3SUM, and All-Pairs Shortest Paths (APSP). Using
+  the same techniques we also obtain a conditional average-case time hierarchy of
+  functions.
+  
+  Based on the average-case hardness and the algebraic structure we achieve for
+  our functions, we outline the construction of a Proof of Work scheme and
+  discuss possible approaches to constructing fine-grained One-Way Functions. We
+  also show how our reductions make conjectures regarding the worst-case hardness
+  of the problems we reduce from (and consequently the Strong Exponential Time
+  Hypothesis) heuristically falsifiable in a sense similar to that of (Naor,
+  CRYPTO 2003).
+  
+  We will discuss many open problems that these results reveal, including
+  pseudorandomness and derandomization in the fine-grained world.
+
   **Lightning talk:** TBA
 
-- Tuesday, Feb. 21th
 - Tuesday, Feb. 28th
 - **PR** Tuesday, Mar. 7th
 - Tuesday, Mar. 14th

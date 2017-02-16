@@ -1,9 +1,8 @@
-Learning to Models of Mathematical Objects (Feb 21--23)
-=======================================================
+Learning Models of Mathematical Objects (Feb 21--23)
+====================================================
 
 - Tuesday (Feb 21), 2--3:30 p.m.
 - Thursday (Feb 23), 2--3:30 p.m.
-
 
 A theme that cuts across many domains of computer science and mathematics is to
 find simple representations of complex mathematical objects such as graphs,
@@ -56,7 +55,7 @@ and some papers we might refer to.
 
 Papers with results we'll cover:
 
-Klivans and Servedio, Boosting and Hard-core Sets, FOCS 99.
+Klivans and Servedio, `Boosting and Hard-core Sets <http://simons-institute.github.io/pseudorandomness/pdfs/KSboost.pdf>`__, FOCS 99.
 
 Omer Reingold, Luca Trevisan, Madhur Tulsiani, Salil P. Vadhan:
 Dense Subsets of Pseudorandom Sets. FOCS 2008: 76-85
@@ -64,24 +63,21 @@ Dense Subsets of Pseudorandom Sets. FOCS 2008: 76-85
 Luca Trevisan, Madhur Tulsiani, Salil P. Vadhan:
 Regularity, Boosting, and Efficiently Simulating Every High-Entropy Distribution. IEEE Conference on Computational Complexity 2009: 126-136
 
-Russell Impagliazzo, Algorithmic Dense Model Theorems and Weak Regularity (unpublished, attached) 
+Russell Impagliazzo, `Algorithmic Dense Model Theorems and Weak Regularity <http://simons-institute.github.io/pseudorandomness/pdfs/nov09.pdf>`__ 
 
-
-Sita Gakkhar Russell Impagliazzo Valentine Kabanets 
-
-Hardcore Measures, Dense Models and Low Complexity Approximations (unpublished, attached)
+Sita Gakkhar Russell Impagliazzo Valentine Kabanets.
+`Hardcore Measures, Dense Models and Low Complexity Approximations <http://simons-institute.github.io/pseudorandomness/pdfs/GIK.pdf>`__
 
 
 Bibliography
+------------
 
 We won't go through these papers explicitly, but they provide the context.   
 
 
 
 Robert E. Schapire:
-The Strength of Weak Learnability (Extended Abstract). FOCS 1989: 28-33
-
-: 01 June 2005
+The Strength of Weak Learnability (Extended Abstract). FOCS 1989: 28-33 : 01 June 2005
 A desicion-theoretic generalization of on-line learning and an application to boosting
 Yoav Freund, Robert E. Schapire
 
