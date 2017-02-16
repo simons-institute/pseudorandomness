@@ -49,5 +49,6 @@ pdf: latexpdf
 .PHONY: github
 github: clean pdf html
 	cp $(BUILDDIR)/latex/pseudorandomness.pdf $(BUILDDIR)/html/.
+	cp -a pdfs $(BUILDDIR)/html/.
 	ghp-import $(BUILDDIR)/html
 	git push origin gh-pages --force
