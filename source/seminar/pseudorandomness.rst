@@ -86,7 +86,10 @@ Schedule
   We will discuss many open problems that these results reveal, including
   pseudorandomness and derandomization in the fine-grained world.
 
-  **Lightning talk:** TBA
+  Joint with Marshall Ball, Alon Rosen, and Prashant Nalini Vasudevan.
+
+  **Lightning talk:** Dean Doron (Tel Aviv University) will present recent work on solving
+  Lapalcian systems in probabilistic logspace.
 
 - Tuesday, Feb. 28th
 - **PR** Tuesday, Mar. 7th

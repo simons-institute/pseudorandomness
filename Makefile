@@ -47,7 +47,7 @@ pdf: latexpdf
 	make latexpdf
 
 .PHONY: github
-github: clean pdf html
+github: pdf html
 	cp $(BUILDDIR)/latex/pseudorandomness.pdf $(BUILDDIR)/html/.
 	cp -a pdfs $(BUILDDIR)/html/.
 	ghp-import $(BUILDDIR)/html
