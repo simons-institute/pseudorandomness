@@ -77,9 +77,16 @@
 <h2>Cryptography using Weak Sources of Randomness (Feb 6&#8211;Feb 9)<a class="headerlink" href="#cryptography-using-weak-sources-of-randomness-feb-6-feb-9" title="Permalink to this headline">¶</a></h2>
 <p>Open Problems presented by Yevgeniy Dodis at the Simons Working Group on Cryptography using Weak Sources of Randomness.</p>
 <p>Prepared by Siyao Guo.</p>
-<div class="section" id="id1">
-<h3><span class="math">\(\mathbf{IP\mbox{-}weak} = \mathbf{IP}\)</span><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Is <span class="math">\(\mathbf{IP\mbox{-}weak} = \mathbf{IP}\)</span>? Note, only one weak source and must be conditional (e.g., <span class="math">\(\mathbf{IP} \neq \mathbf{AM}\)</span>).</p>
+<div class="section" id="interactive-proofs-with-imperfect-randomness">
+<h3>Interactive proofs with imperfect randomness.<a class="headerlink" href="#interactive-proofs-with-imperfect-randomness" title="Permalink to this headline">¶</a></h3>
+<p>The class of languages which admit deterministic interactive proofs
+is <span class="math">\(\mathbf{NP}\)</span>.
+The class of languages (<span class="math">\(\mathbf{IP}\)</span>) which admit <em>probabilistic</em> interactive
+proofs is <span class="math">\(\mathbf{PSPACE}\)</span>.</p>
+<p><strong>Question:</strong> Is <span class="math">\(\mathbf{IP\mbox{-}weak} = \mathbf{IP}\)</span>?
+Can we simulate probabilistic interactive proofs using imperfect random sources?</p>
+<p>Dodis et al.&nbsp;<a class="reference internal" href="zreferences.html#dops04" id="id1">[DOPS04]</a> (<a class="reference external" href="https://cs.nyu.edu/~dodis/ps/1-source.pdf">pdf</a>)
+showed that block sources are sufficient to similate interactive proofs.</p>
 </div>
 <div class="section" id="extraction-from-limited-bit-coin-source">
 <h3>Extraction from limited &#8220;bit-coin source&#8221;<a class="headerlink" href="#extraction-from-limited-bit-coin-source" title="Permalink to this headline">¶</a></h3>
@@ -100,9 +107,8 @@
 <p>&#8212;</p>
 <p>Consider the case of (information-theoretic) private-key encryption
 where parties wish to encrypt a <span class="math">\(b\)</span>-bit value using shared secret
-key sampled from an imperfect random source <span class="math">\(X\)</span> over <span class="math">\(n\)</span>
-bis. Bosley and
-Dodis&nbsp;<a class="reference internal" href="zreferences.html#bd07" id="id2">[BD07]</a> (<a class="reference external" href="https://www.iacr.org/archive/tcc2007/43920001/43920001.pdf">pdf</a>)
+key sampled from an imperfect random source <span class="math">\(X\)</span> over <span class="math">\(n\)</span> bits.
+Bosley and Dodis&nbsp;<a class="reference internal" href="zreferences.html#bd07" id="id2">[BD07]</a> (<a class="reference external" href="https://www.iacr.org/archive/tcc2007/43920001/43920001.pdf">pdf</a>)
 showed that if such scheme is secure, then one can deterministically
 extract <span class="math">\(b-\log{n}\)</span> bits from <span class="math">\(X\)</span>. Hence, to a large extent,
 true randomness is inherent for encryption.</p>
@@ -146,8 +152,7 @@ that</p>
 <span class="math">\(2\)</span>-out-of-<span class="math">\(2\)</span> secret sharing scheme, can we
 deterministically extract random bits from <span class="math">\(X\)</span>?</p>
 <p>More background in secret sharing can be found in the survey by
-Beimel&nbsp;<a class="reference internal" href="zreferences.html#beimel11" id="id4">[Bei11]</a> (
-<a class="reference external" href="https://www.cs.bgu.ac.il/~beimel/Papers/Survey.pdf">pdf</a>).</p>
+Beimel&nbsp;<a class="reference internal" href="zreferences.html#beimel11" id="id4">[Bei11]</a> (<a class="reference external" href="https://www.cs.bgu.ac.il/~beimel/Papers/Survey.pdf">pdf</a>).</p>
 </div>
 <div class="section" id="beating-rt-bound-using-computational-extractor">
 <h3>Beating RT-bound using computational extractor.<a class="headerlink" href="#beating-rt-bound-using-computational-extractor" title="Permalink to this headline">¶</a></h3>
@@ -161,8 +166,7 @@ extractor, whose output is only required to be computationally
 indistinguishable from uniformly random.</p>
 <p>Dachman-Soled et al.&nbsp;<a class="reference internal" href="zreferences.html#dgkm12" id="id6">[DachmanSoledGKM12]</a>
 (<a class="reference external" href="https://eprint.iacr.org/2011/708.pdf">pdf</a>), together with the
-result of Dodis et
-al.&nbsp;<a class="reference internal" href="zreferences.html#dpw14" id="id7">[DPW14]</a><a class="reference external" href="https://eprint.iacr.org/2013/708.pdf">pdf</a>
+result of Dodis et al.&nbsp;<a class="reference internal" href="zreferences.html#dpw14" id="id7">[DPW14]</a> (<a class="reference external" href="https://eprint.iacr.org/2013/708.pdf">pdf</a>)
 showed that any efficient computational extractor beating RT-bound
 implies one-way function.</p>
 <p><strong>Question:</strong> Can we construct an <em>efficient</em>
@@ -170,7 +174,7 @@ computational extractor <em>beating RT-bound</em> based on one-way functions?</p
 <p>Krawczyk&nbsp;<a class="reference internal" href="zreferences.html#kra10" id="id8">[Kra10]</a> (<a class="reference external" href="https://eprint.iacr.org/2010/264.pdf">pdf</a>)
 used extract-then-expand approach and showed a computational extractor
 for medium-to-high entropy sources. More background and other approaches
-for constructing compuational extractors can be found in Yevgeniy’s
+for constructing computational extractors can be found in Yevgeniy’s
 <a class="reference external" href="http://cs.nyu.edu/~dodis/randomness-in-crypto/no-waste.pdf">slides</a>
 and <a class="reference external" href="http://cs.nyu.edu/~dodis/randomness-in-crypto/lecture12.pdf">lecture
 note</a>.</p>

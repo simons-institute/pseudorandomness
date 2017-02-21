@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Interactive proofs with imperfect randomness. &#8212; Pseudorandomness Spring 2017 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'Spring 2017',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../seminar/index.html">Seminars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../groups/index.html">Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Open Problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="interactive-proofs-with-imperfect-randomness">
+<h1>Interactive proofs with imperfect randomness.<a class="headerlink" href="#interactive-proofs-with-imperfect-randomness" title="Permalink to this headline">¶</a></h1>
+<p>The class of languages which admit deterministic interactive proofs is
+NP. The class of languages (<span class="math">\(\mathrm{IP}\)</span>) which admit
+<em>probabilistic</em> interactive proofs is PSPACE.</p>
+<p><span class="math">\(\bold{Question:}\)</span> Is <span class="math">\(\mathrm{IP{-}weak}=\mathrm{IP}\)</span>? Can
+we simulate probabilistic interactive proofs using imperfect random
+sources?</p>
+<p>Dodis et
+al.&nbsp;<a href="#id1"><span class="problematic" id="id2">:raw-latex:`\cite{DOPS04}`(`pdf &lt;https://cs.nyu.edu/~dodis/ps/1-source.pdf&gt;`__</span></a>)
+showed that block sources are sufficient to similate interactive proofs.</p>
+<p>Consider the case of (information-theoretic) private-key encryption
+where parties wish to encrypt a <span class="math">\(b\)</span>-bit value using shared secret
+key sampled from an imperfect random source <span class="math">\(X\)</span> over <span class="math">\(n\)</span>
+bis. Bosley and
+Dodis&nbsp;<a href="#id3"><span class="problematic" id="id4">:raw-latex:`\cite{BD07}`(`pdf &lt;https://www.iacr.org/archive/tcc2007/43920001/43920001.pdf&gt;`__</span></a>)
+showed that if such scheme is secure, then one can deterministically
+extract <span class="math">\(b-\log{n}\)</span> bits from <span class="math">\(X\)</span>. Hence, to a large extent,
+true randomness is inherent for encryption.</p>
+</div>
+<div class="section" id="separation-between-encryption-and-extraction">
+<h1>Separation between encryption and extraction.<a class="headerlink" href="#separation-between-encryption-and-extraction" title="Permalink to this headline">¶</a></h1>
+<p>They conjecture that extracting <span class="math">\(b\)</span> bits from <span class="math">\(X\)</span> is
+impossible.</p>
+<p>For any extractor
+<span class="math">\(\mathrm{Ext}:\{0,1\}^n\times\big(\{0,1\}^{\mathrm{poly}(n)}\big)^B\rightarrow\{0,1\}\)</span>,
+there exists distribution <span class="math">\(X\)</span> over <span class="math">\(\{0,1\}^n\)</span> and
+<span class="math">\(\mathrm{Enc}:\{0,1\}^n\times[B]\rightarrow \{0,1\}^{\mathrm{poly}(n)}\)</span>
+such that</p>
+<ul class="simple">
+<li>for any <span class="math">\(m_0\neq m_1\)</span>,
+<span class="math">\(\Delta(\mathrm{Enc}(X,m_0),\mathrm{Enc}(X,m_1))=0,\)</span></li>
+<li><span class="math">\(\Delta(\mathrm{Ext}(X, \mathrm{Enc}(X,1),\dots, \mathrm{Enc}(X,B)),U_1)&gt;\Omega(1)\)</span></li>
+</ul>
+<p>where <span class="math">\(U_1\)</span> is the uniform distribution over <span class="math">\(\{0,1\}\)</span>,
+<span class="math">\(B=2^b\)</span> and <span class="math">\(\Delta\)</span> stands for statistical distance.</p>
+<p>Bosley and Dodis&nbsp;<a href="#id5"><span class="problematic" id="id6">:raw-latex:`\cite{BD07}`</span></a> showed that above conjecture
+is true for <span class="math">\(b\leq \log{n}-\log{\log{n}}\)</span>.</p>
+</div>
+<div class="section" id="is-true-randomness-inherent-for-sharing-schemes">
+<h1>Is true randomness inherent for sharing schemes?<a class="headerlink" href="#is-true-randomness-inherent-for-sharing-schemes" title="Permalink to this headline">¶</a></h1>
+<p>A randomize function <span class="math">\(\mathrm{share}(m, X)\rightarrow(L,R)\)</span> (which
+takes a message <span class="math">\(m\)</span> over <span class="math">\(b\)</span> bits as input and uses
+<span class="math">\(X\)</span> as the random source) is a <span class="math">\(2\)</span>-out-of-<span class="math">\(2\)</span> secret
+sharing scheme if</p>
+<ul>
+<li><p class="first">(Reconstruction) there exists an algorithm <span class="math">\(\mathrm{Rec}\)</span> such
+that</p>
+<div class="math">
+\[\text{for every $m$, $\Pr[\mathrm{Rec}(L,R)=m]=1,$}\]</div>
+</li>
+<li><p class="first">(Privacy) for any <span class="math">\(m'\neq m\)</span>, <span class="math">\(\Delta(L(m),L(m'))=0\)</span> and
+<span class="math">\(\Delta(R(m),R(m'))=0\)</span>.</p>
+</li>
+</ul>
+<p><span class="math">\(\bold{Question\colon}\)</span> If <span class="math">\(\mathrm{share}(m,X)\)</span> is a
+<span class="math">\(2\)</span>-out-of-<span class="math">\(2\)</span> secret sharing scheme, can we
+deterministically extract random bits from <span class="math">\(X\)</span>?</p>
+<p>More background in secret sharing can be found in the survey by
+Beimel&nbsp;<a href="#id7"><span class="problematic" id="id8">:raw-latex:`\cite{Beimel11}`</span></a>
+(<a class="reference external" href="https://www.cs.bgu.ac.il/~beimel/Papers/Survey.pdf">pdf</a>).</p>
+</div>
+<div class="section" id="beating-rt-bound-using-computational-extractor">
+<h1>Beating RT-bound using computational extractor.<a class="headerlink" href="#beating-rt-bound-using-computational-extractor" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">Radhakrishnan and Ta-Shma</div>
+<div class="line"><a href="#id9"><span class="problematic" id="id10">:raw-latex:`\cite{RT97}`(`pdf &lt;https://pdfs.semanticscholar.org/0385/3893e657cb69e51b603d3f1cc1d5c47be5a5.pdf&gt;`__</span></a>)
+showed that any seeded extractor with error <span class="math">\(\eps\)</span> suffers from
+<span class="math">\(2\log{1/\eps}\)</span> entropy loss (entropy loss is the amount of
+entropy in source and seed substracting output length). Motivated by
+bypassing this limitation, one approach is to consider computational
+extractor, whose output is only required to be computationally
+indistinguishable from uniformly random.</div>
+</div>
+<div class="line-block">
+<div class="line">Dachman-Soled et al.&nbsp;<a href="#id11"><span class="problematic" id="id12">:raw-latex:`\cite{DGKM12}`</span></a>
+(<a class="reference external" href="https://eprint.iacr.org/2011/708.pdf">pdf</a>), together with the
+result of Dodis et
+al.&nbsp;<a href="#id13"><span class="problematic" id="id14">:raw-latex:`\cite{DPW14}`(`pdf &lt;https://eprint.iacr.org/2013/708.pdf&gt;`__</span></a>)
+showed that any efficient computational extractor beating RT-bound
+implies one-way function.</div>
+<div class="line"><span class="math">\(\bold{Question\colon}\)</span> Can we construct an <em>efficient</em>
+computational extractor <em>beating RT-bound</em> based on one-way functions?</div>
+</div>
+<p>Krawczyk&nbsp;<a href="#id15"><span class="problematic" id="id16">:raw-latex:`\cite{Kra10}`(`pdf &lt;https://eprint.iacr.org/2010/264.pdf&gt;`__</span></a>)
+used extract-then-expand approach and showed a computational extractor
+for medium-to-high entropy sources. More background and other approaches
+for constructing compuational extractors can be found in Yevgeniy’s
+<a class="reference external" href="http://cs.nyu.edu/~dodis/randomness-in-crypto/no-waste.pdf">slides</a>
+and <a class="reference external" href="http://cs.nyu.edu/~dodis/randomness-in-crypto/lecture12.pdf">lecture
+note</a>.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2017, Simons Institute.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/open_problems/o.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
