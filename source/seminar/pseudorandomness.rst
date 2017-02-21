@@ -94,6 +94,11 @@ Schedule
 - Tuesday, Feb. 28th
 - **PR** Tuesday, Mar. 7th
 - Tuesday, Mar. 14th
+
+  Amnon Ta-Shma (TBD)
+
+  **Lightning talk:** (TBD)
+
 - Tuesday, Mar. 21st
 - **ML** Tuesday, Mar. 28th
 - Tuesday, Apr. 4th
