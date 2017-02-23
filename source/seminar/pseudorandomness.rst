@@ -105,17 +105,28 @@ Schedule
 
   **Lightning talk:** TBD
 
-- **PR** Tuesday, Mar. 7th
+- Tuesday, Mar. 7th
+
+  No seminar due to the `Proving and Using Pseudorandomness workshop <https://simons.berkeley.edu/workshops/pseudorandomness2017-2>`_.
+
 - Tuesday, Mar. 14th
 
-  Amnon Ta-Shma (TBD)
+  `Amnon Ta-Shma <http://www.cs.tau.ac.il/~amnon/>`_ (TBD)
 
   **Lightning talk:** (TBD)
 
 - Tuesday, Mar. 21st
 - **ML** Tuesday, Mar. 28th
 - Tuesday, Apr. 4th
+
+  `Siyao Guo <https://sites.google.com/site/siyaoguo/>`_ (TBD)
+
+  **Lightning talk:** (TBD)
+
 - **PR** Tuesday, Apr. 11th
+
+  No seminar due to the `Structure vs. Randomness workshop <https://simons.berkeley.edu/workshops/pseudorandomness2017-3>`_.
+
 - Tuesday, Apr. 18th
 - Tuesday, Apr. 25th
 - **ML** Tuesday, May 2nd
