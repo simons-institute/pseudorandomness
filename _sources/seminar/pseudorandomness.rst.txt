@@ -92,6 +92,19 @@ Schedule
   Lapalcian systems in probabilistic logspace.
 
 - Tuesday, Feb. 28th
+
+  `Daniel Kane <https://cseweb.ucsd.edu/~dakane/>`_
+  "Fooling Fourier Shapes"
+
+  We present recent work providing a nearly optimal, explicit
+  pseudorandom generator against linear threshold functions. The basic
+  idea is to fool the Fourier transform of the corresponding linear
+  forms rather than the threshold function. This generalizes further to
+  fooling a class of functions that we call "Fourier shapes". We discuss
+  the generator and some of its applications.
+
+  **Lightning talk:** TBD
+
 - **PR** Tuesday, Mar. 7th
 - Tuesday, Mar. 14th
 
