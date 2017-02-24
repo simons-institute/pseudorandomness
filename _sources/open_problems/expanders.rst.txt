@@ -1,6 +1,3 @@
-Expanders and Extractors
-========================
-
 Expanders and Extractors Workshop (Jan 30--Feb 3)
 -------------------------------------------------
 
@@ -26,7 +23,7 @@ Question: Does there exist $c>0$ and $n$-vertex $3$-uniform hypergraphs with
 at least $cn^2$ hyperedges and arbitrarily high girth?
 
 Cliques in near Ramanujan Graphs, Noga Alon
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 An $(n,d, \lambda)$-graph is a $d$-regular graph on $n$ vertices so
 that all eigenvalues but the top one are in absolute value at most
@@ -47,7 +44,7 @@ $d =\Omega(n^{4/5})$?
 It is not even known whether or not there is such a graph with $n^{2/3} =o(d)$.
 
 On the extractable entropy from zero-fixing sources, Gil Cohen
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Let $n \ge k \ge 0$ be integers. An $n$-bit random variable $X$ is called
 a $k$-*zero-fixing source* if there exists a subset of indices
@@ -83,7 +80,7 @@ $m(n,k)
 = k - O(1)$ whereas for $k = o(\tau(n))$, $m(n,k) \le 0.5 \log_2{k} + O(1)$.
 
 Beating the expander mixing lemma for small sets, David Zuckerman
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The expander mixing lemma asserts that in a $d$-regular
 graph $G$ on $n$ nodes,
@@ -108,7 +105,7 @@ Bounds on line-point incidence graphs are also known.
 It would be extremely interesting to have a general method.
 
 Spectral radius problem for free groups, Emmanuel Breuillard
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If $\mu$ is a probability measure on a non-abelian free
 group $F$, let $\sigma(\mu):=\|T_\mu\|$ be the norm of the
@@ -126,7 +123,7 @@ coset $xH$ of a cyclic subgroup $H$ of $F$ such that
 $\mu(xH)>\delta$?
 
 Explicit Coding Power Series, Anup Rao
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We are interested in giving an explicit description of a formal
 power-series over a finite field $F$ with some nice properties. The

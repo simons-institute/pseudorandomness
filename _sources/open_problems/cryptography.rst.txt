@@ -1,6 +1,3 @@
-Cryptography
-============
-
 Cryptography using Weak Sources of Randomness (Feb 6--Feb 9)
 ------------------------------------------------------------
 
