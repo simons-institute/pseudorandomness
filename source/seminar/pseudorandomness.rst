@@ -103,7 +103,8 @@ Schedule
   fooling a class of functions that we call "Fourier shapes". We discuss
   the generator and some of its applications.
 
-  **Lightning talk:** TBD
+  **Lightning talk:** Pierre Bienvenu (University of Bristol) will present problems
+  of arithmetic combinatorics in Function fields and possible use of the polynomial method to attack them.
 
 - Tuesday, Mar. 7th
 
