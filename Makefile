@@ -29,7 +29,6 @@ html:
 .PHONY: latex
 latex:
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-	perl -pi -e 's:Release: :' build/latex/pseudorandomness.tex
 	@echo
 	@echo "Build finished; the LaTeX files are in $(BUILDDIR)/latex."
 	@echo "Run \`make' in that directory to run these through (pdf)latex" \

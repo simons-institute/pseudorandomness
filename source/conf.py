@@ -118,7 +118,7 @@ htmlhelp_basename = 'Pseudorandomnessdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
-# preamble = r""" """
+preamble = r"""\usepackage{stmaryrd}"""
 
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
@@ -131,21 +131,21 @@ latex_elements = {
 
     # Additional stuff for the LaTeX preamble.
     #
-    # 'preamble': preamble,
+     'preamble': preamble,
 
     # Latex figure (float) alignment
     #
     # 'figure_align': 'htbp',
 
     # Value that prefixes 'release' element on title page, default 'Release'.
-     'releasename': '',
+     'releasename': ' ',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ('open_problems/tex_index', 'pseudorandomness.tex', u'Pseudorandomness Program\\\\Open Problems',
+    ('open_problems/tex_index', 'pseudorandomness.tex', u'Pseudorandomness Program\\\\Notes \& Open Problems',
      u'Simons Institute', 'howto'),
 ]
 
