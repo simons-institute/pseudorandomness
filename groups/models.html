@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Learning Models of Mathematical Objects (Feb 21–23) &#8212; Pseudorandomness Spring 2017 documentation</title>
+    <title>Background &#8212; Pseudorandomness Spring 2017 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -27,8 +27,6 @@
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Open Problems" href="../open_problems/index.html" />
-    <link rel="prev" title="Cryptography using Weak Sources of Randomness (Feb 6–Feb 9)" href="cryptography.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -41,13 +39,9 @@
     
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper"><h3>Navigation</h3>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../seminar/index.html">Seminars</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Groups</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="cryptography.html">Cryptography using Weak Sources of Randomness (Feb 6&#8211;Feb 9)</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Learning Models of Mathematical Objects (Feb 21&#8211;23)</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Groups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../open_problems/index.html">Open Problems</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../reading/index.html">Reading Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
@@ -70,17 +64,11 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="learning-models-of-mathematical-objects-feb-21-23">
-<h1>Learning Models of Mathematical Objects (Feb 21&#8211;23)<a class="headerlink" href="#learning-models-of-mathematical-objects-feb-21-23" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li>Tuesday (Feb 21), 2&#8211;3:30 p.m.</li>
-<li>Thursday (Feb 23), 2&#8211;3:30 p.m.</li>
-</ul>
-<p>Notes from presentation by Russell Impagliazzo at the Simons Working Group on
+  <p>Notes from presentation by Russell Impagliazzo at the Simons Working Group on
 Learning Models of Mathematical Objects.</p>
 <p>Prepared by Holden Lee.</p>
 <div class="section" id="background">
-<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<h1>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h1>
 <p>A theme that cuts across many domains of computer science and
 mathematics is to find simple representations of complex mathematical
 objects such as graphs, functions, or distributions on data. These
@@ -175,7 +163,7 @@ long polynomial progressions”. Acta Mathematica. 201 (2): 213–305</li>
 </ul>
 </div>
 <div class="section" id="big-picture">
-<h2>Big picture<a class="headerlink" href="#big-picture" title="Permalink to this headline">¶</a></h2>
+<h1>Big picture<a class="headerlink" href="#big-picture" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
 <div class="line">We’ll talk about several results which have different names in
 different fields. You probably know them, but don’t know the same or
@@ -461,7 +449,7 @@ application.</p>
 </ol>
 </div>
 <div class="section" id="setup">
-<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<h1>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h1>
 <p>First we discuss the PAC learning model.</p>
 <p>Let <span class="math">\(U\)</span> be a set, and by abuse of notation, also a distribution on
 that set. (Think of <span class="math">\(U\)</span> as the universe, the set of possible
@@ -526,7 +514,7 @@ of functions</p>
 \[\mathcal F_k \mathcal T = \{f(h_1(x),\ldots, h_k(x)) : f\in\mathcal F, h_1,\ldots, h_k\in \mathcal T\}.\]</div>
 </div>
 <div class="section" id="boosting-and-the-hard-core-lemma">
-<h2>Boosting and the Hard-core lemma<a class="headerlink" href="#boosting-and-the-hard-core-lemma" title="Permalink to this headline">¶</a></h2>
+<h1>Boosting and the Hard-core lemma<a class="headerlink" href="#boosting-and-the-hard-core-lemma" title="Permalink to this headline">¶</a></h1>
 <p>The first boosting algorithm we give is totally ridiculous from the ML
 point of view. For people who work on weak regularity on graphs this is
 the natural version, and leads to the standard versions of results.</p>
@@ -585,7 +573,7 @@ probability <span class="math">\(1-\delta\)</span>.</p>
 get a distribution <span class="math">\(\mu_i\)</span> that’s hard-core.</p>
 </div>
 <div class="section" id="dense-model-theorem">
-<h2>Dense model theorem<a class="headerlink" href="#dense-model-theorem" title="Permalink to this headline">¶</a></h2>
+<h1>Dense model theorem<a class="headerlink" href="#dense-model-theorem" title="Permalink to this headline">¶</a></h1>
 <p>For a set <span class="math">\(S\subseteq U\)</span> and a function <span class="math">\(T:U \to \{0,1\}\)</span>,
 let <span class="math">\(T(S):=\operatorname{E}_{x\in S} T(x)\)</span>. (For a measure
 <span class="math">\(\mu: U\to [0,1]\)</span>, also write
@@ -654,7 +642,7 @@ of the mass. Then</p>
 \[D_{\mu'|_U}\sim_{O(\varepsilon)} D_{\mu'|_S}\sim_{O(\varepsilon/\delta)} S.\]</div>
 </div>
 <div class="section" id="proof-for-boosting">
-<h2>Proof for boosting<a class="headerlink" href="#proof-for-boosting" title="Permalink to this headline">¶</a></h2>
+<h1>Proof for boosting<a class="headerlink" href="#proof-for-boosting" title="Permalink to this headline">¶</a></h1>
 <p>[Proof of Theorem&nbsp;[thm:boosting]] The algorithm is as follows. Let
 <span class="math">\(WL(\mu)\)</span> denote the weak learner operating on <span class="math">\((\mu, f)\)</span>.</p>
 <p>Let <span class="math">\(\mu_0\)</span> be constant 1, <span class="math">\(i=0\)</span>.</p>
@@ -756,7 +744,7 @@ LHS is smaller.)</p>
 iterations is at most <span class="math">\(k\le (\delta \varepsilon)^2\)</span>.</p>
 </div>
 <div class="section" id="comments-regularity-lemmas">
-<h2>Comments, Regularity lemmas<a class="headerlink" href="#comments-regularity-lemmas" title="Permalink to this headline">¶</a></h2>
+<h1>Comments, Regularity lemmas<a class="headerlink" href="#comments-regularity-lemmas" title="Permalink to this headline">¶</a></h1>
 <p>Some comments:</p>
 <ol class="arabic">
 <li><p class="first">All you get from this proof is a decision tree; the complexity is
@@ -835,7 +823,6 @@ we are actually given all pairs <span class="math">\((x,f(x))\)</span>.</td></tr
 </tbody>
 </table>
 </div>
-</div>
 
 
           </div>
@@ -851,7 +838,7 @@ we are actually given all pairs <span class="math">\((x,f(x))\)</span>.</td></tr
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
       
       |
-      <a href="../_sources/groups/modelstructure.rst.txt"
+      <a href="../_sources/groups/models.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 
