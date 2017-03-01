@@ -97,8 +97,16 @@ Tuesday, Mar. 14th
 Tuesday, Mar. 21st
 ------------------
 
+`Marco Carmosino <http://marco.ntime.org/>`_ (TBD)
+
+*Lightning talk.* (TBD)
+
 Tuesday, Mar. 28th
 ------------------
+
+`Andrej Bogdanov <http://www.cse.cuhk.edu.hk/~andrejb/>`_ (TBD)
+
+*Lightning talk.* (TBD)
 
 Tuesday, Apr. 4th
 -----------------
@@ -115,8 +123,19 @@ Tuesday, Apr. 11th
 Tuesday, Apr. 18th
 ------------------
 
+`Nikhil Srivastava <https://math.berkeley.edu/~nikhil/>`_ (TBD)
+
+*Lightning talk.* (TBD)
+
 Tuesday, Apr. 25th
 ------------------
 
 Tuesday, May 2nd
+----------------
+
+`Caroline Terry <http://www.math.umd.edu/~cterry/>`_ (TBD)
+
+*Lightning talk.* (TBD)
+
+Tuesday, May 9th
 ----------------
