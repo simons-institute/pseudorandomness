@@ -105,6 +105,21 @@ Tuesday, Mar. 28th
 ------------------
 
 `Andrej Bogdanov <http://www.cse.cuhk.edu.hk/~andrejb/>`_ (TBD)
+"Small bias requires large formulas"
+
+A small-biased function is a randomized function whose distribution of
+truth-tables is small-biased. We demonstrate that known explicit lower bounds
+on the size of (1) general Boolean formulas, (2) Boolean formulas of fan-in
+two, (3) de Morgan formulas, as well as (4) correlation lower bounds against
+small de Morgan formulas apply to small-biased functions. As a consequence, any
+strongly explicit small-biased generator is subject to the best known explicit
+formula lower bounds in all these models.
+
+On the other hand, we give a construction of a small-biased function that is
+tight with respect to lower bounds (1) and (2) for the relevant range of
+parameters. We interpret this construction as a natural-like barrier against
+substantially stronger lower bounds for general formulas.
+
 
 *Lightning talk.* (TBD)
 
