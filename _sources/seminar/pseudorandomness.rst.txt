@@ -104,7 +104,7 @@ Tuesday, Mar. 21st
 Tuesday, Mar. 28th
 ------------------
 
-`Andrej Bogdanov <http://www.cse.cuhk.edu.hk/~andrejb/>`_ (TBD)
+`Andrej Bogdanov <http://www.cse.cuhk.edu.hk/~andrejb/>`_
 "Small bias requires large formulas"
 
 A small-biased function is a randomized function whose distribution of
