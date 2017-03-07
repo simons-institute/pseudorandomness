@@ -6,5 +6,4 @@ Open Problems
 
    expanders
    cryptography
-   ../groups/modelstructure
    zreferences
