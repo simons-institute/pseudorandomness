@@ -145,6 +145,10 @@ Tuesday, Apr. 18th
 Tuesday, Apr. 25th
 ------------------
 
+`Shachar Lovett <http://cseweb.ucsd.edu/~slovett/home.html>`_ (TBD)
+
+*Lightning talk.* (TBD)
+
 Tuesday, May 2nd
 ----------------
 
