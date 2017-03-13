@@ -90,7 +90,33 @@ Tuesday, Mar. 7th
 Tuesday, Mar. 14th
 ------------------
 
-`Amnon Ta-Shma <http://www.cs.tau.ac.il/~amnon/>`_ (TBD)
+`Amnon Ta-Shma <http://www.cs.tau.ac.il/~amnon/>`_
+"Explicit, Almost Optimal, Epsilon-Balanced Codes"
+
+The subject of the talk is the same as the one I gave in the workshop. However,
+I hope to use the hour to describe the construction, technique and proof in
+more detail.
+
+The abstract of the workshop talk is:
+
+The question of finding an epsilon-biased set with close to optimal support
+size, or, equivalently, finding an explicit binary code with distance
+$\frac{1-\varepsilon}{2}$ and rate close to the Gilbert-Varshamov bound, attracted a
+lot of attention in recent decades. In this paper we solve the problem almost
+optimally and show an explicit $\varepsilon$-biased set over $k$ bits with support
+size $O(\frac{k}{\varepsilon^{2+o(1)}})$. This improves upon all previous explicit
+constructions which were in the order of $\frac{k^2}{\varepsilon^2}$,
+$\frac{k}{\varepsilon^3}$ or $\frac{k^{5/4}}{\varepsilon^{5/2}}$. The result is close to the
+Gilbert-Varshamov bound which is $O(\frac{k}{\varepsilon^2})$ and the lower bound
+which is $\Omega\left(\frac{k}{\varepsilon^2 \log(\frac{1}{\varepsilon})}\right)$.
+
+The main technical tool we use is bias amplification with the $s$-wide
+replacement product. The sum of two independent samples from an $\varepsilon$-biased
+set is $\varepsilon^2$ biased. Rozenman and Wigderson showed how to amplify the bias
+more economically by choosing two samples with an expander. Based on that they
+suggested a recursive construction that achieves sample size
+$O(\frac{k}{\varepsilon^4})$. We show that amplification with a long random walk over
+the $s$-wide replacement product reduces the bias almost optimally.
 
 *Lightning talk.* (TBD)
 
