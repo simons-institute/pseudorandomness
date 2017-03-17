@@ -118,12 +118,26 @@ suggested a recursive construction that achieves sample size
 $O(\frac{k}{\varepsilon^4})$. We show that amplification with a long random walk over
 the $s$-wide replacement product reduces the bias almost optimally.
 
-*Lightning talk.* (TBD)
 
 Tuesday, Mar. 21st
 ------------------
 
-`Marco Carmosino <http://marco.ntime.org/>`_ (TBD)
+`Marco Carmosino <http://marco.ntime.org/>`_
+"Agnostic Learning From Natural Proofs"
+
+Learning algorithms for circuit complexity classes are often
+obtained by inspecting the proofs of circuit lower bounds. In recent
+work (CIKK16), it was show that this observation is somewhat generic:
+for sufficiently expressive circuit classes C, a natural proof (in the
+sense of Razborov-Rudich 97) of a circuit lower bound against C
+implies a learning algorithm for concepts exactly realizable by
+C-circuits. The learning algorithm constructed in CIKK16 does not need
+to "inspect" the proof of the bound: it only requires that the proof
+is natural. In this talk we present the natural learning technique,
+which is an application of algorithms from the crypto/derandomization
+literature. Then we discuss an extension of the technique to learning
+concepts only approximately realizable by C-circuits (agnostic
+learning).
 
 *Lightning talk.* (TBD)
 
