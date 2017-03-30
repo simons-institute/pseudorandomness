@@ -139,7 +139,6 @@ literature. Then we discuss an extension of the technique to learning
 concepts only approximately realizable by C-circuits (agnostic
 learning).
 
-*Lightning talk.* (TBD)
 
 Tuesday, Mar. 28th
 ------------------
@@ -161,12 +160,28 @@ parameters. We interpret this construction as a natural-like barrier against
 substantially stronger lower bounds for general formulas.
 
 
-*Lightning talk.* (TBD)
-
 Tuesday, Apr. 4th
 -----------------
 
-`Siyao Guo <https://sites.google.com/site/siyaoguo/>`_ (TBD)
+`Siyao Guo <https://sites.google.com/site/siyaoguo/>`_
+"Fixing Cracks in the Concrete: Random Oracles with Auxiliary Input, Revisited"
+
+We revisit security proofs for various cryptographic primitives in the random
+oracle model with auxiliary input (ROM-AI): an attacker $A$ can compute arbitrary
+$S$ bits of leakage about the random oracle $O$ before attacking the system, and
+then use additional $T$ oracle queries to $O$ during the attack. This model was
+explicitly studied by Unruh  (CRYPTO 2007), but dates back to the seminal paper
+of Hellman in 1980 about time-space tradeoffs for inverting random functions,
+and has natural applications in settings where traditional random oracle proofs
+are not useful: (a) security against non-uniform attackers;  (b) security
+against preprocessing.
+
+We obtain a number of new results about ROM-AI but our main message is that
+ROM-AI is the "new cool kid in town:"  it nicely connects theory and practice,
+has a lot of exciting open questions and is still in its infancy.  In short,
+you should work on it!
+
+Based on joint works with Sandro Coretti, Yevgeniy Dodis and Jonathan Katz.
 
 *Lightning talk.* (TBD)
 
