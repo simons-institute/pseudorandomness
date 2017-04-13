@@ -183,7 +183,6 @@ you should work on it!
 
 Based on joint works with Sandro Coretti, Yevgeniy Dodis and Jonathan Katz.
 
-*Lightning talk.* (TBD)
 
 Tuesday, Apr. 11th
 ------------------
@@ -193,7 +192,16 @@ Tuesday, Apr. 11th
 Tuesday, Apr. 18th
 ------------------
 
-`Nikhil Srivastava <https://math.berkeley.edu/~nikhil/>`_ (TBD)
+`Nikhil Srivastava <https://math.berkeley.edu/~nikhil/>`_
+"Matrix Concentration for Expander Walks"
+
+We prove a Chernoff-type bound for sums of matrix-valued random variables
+sampled via a random walk on an expander, confirming a conjecture of
+Wigderson and Xiao up to logarithmic factors in the deviation parameter.
+This allows one to derandomize certain applications of the matrix Chernoff bound,
+going roughly from $k \log(n)$
+to $k+\log(n)$ bits as in the scalar case.
+
 
 *Lightning talk.* (TBD)
 
