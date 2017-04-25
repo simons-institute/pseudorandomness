@@ -203,12 +203,35 @@ going roughly from $k \log(n)$
 to $k+\log(n)$ bits as in the scalar case.
 
 
-*Lightning talk.* (TBD)
-
 Tuesday, Apr. 25th
 ------------------
 
-`Shachar Lovett <http://cseweb.ucsd.edu/~slovett/home.html>`_ (TBD)
+`Shachar Lovett <http://cseweb.ucsd.edu/~slovett/home.html>`_
+"The Decision Tree Complexity of k-SUM is Near-Linear"
+
+The 3-SUM problem asks, given $n$ real numbers $x_1,\dots,x_n$, whether there exist $3$
+of them that sum to zero. There is a trivial algorithm that solves it in $O(n^2)$
+time, and the best algorithm to date only improves upon it in logarithmic
+terms. A significantly better algorithm is believed to be impossible (or at
+least very surprising).
+ 
+We show that in the linear decision tree model, 3-SUM has an $O(n polylog(n))$
+algorithm. A linear decision tree is an adaptive algorithm which makes linear
+queries of the form "$\sum a_i x_i>0$?" to the input $x$, and at the end decides
+whether a 3-SUM exists. Moreover, the type of queries we use are only label
+queries of the form "$x_i+x_j+x_k>0$?" or comparison queries of the form
+"$x_i+x_j+x_k>x_a+x_b+x_c$?". Thus, the queries are all 6-sparse linear queries
+with $\{-1,0,1\}$ coefficients. More generally, for any constant $k$, we get a linear
+decision tree for k-SUM which makes $O(n polylog(n))$ queries which are each
+$2k$-sparse with $\{-1,0,1\}$ coefficients. This matches a lower bound of Ailon and
+Chazelle, and improved upon previous work of Gronlund and Pettie which gave an
+$O(n^{k/2})$ linear decision tree for k-SUM.
+ 
+The proof is based on a connection between the linear decision trees model and
+active learning. Specifically, it builds upon a new combinatorial notion
+introduced by the authors in previous work of "inference dimension".
+ 
+Joint work with Daniel Kane and Shay Moran.
 
 *Lightning talk.* (TBD)
 

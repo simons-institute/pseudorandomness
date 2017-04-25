@@ -233,11 +233,31 @@ Wigderson and Xiao up to logarithmic factors in the deviation parameter.
 This allows one to derandomize certain applications of the matrix Chernoff bound,
 going roughly from <span class="math">\(k \log(n)\)</span>
 to <span class="math">\(k+\log(n)\)</span> bits as in the scalar case.</p>
-<p><em>Lightning talk.</em> (TBD)</p>
 </div>
 <div class="section" id="tuesday-apr-25th">
 <h2>Tuesday, Apr. 25th<a class="headerlink" href="#tuesday-apr-25th" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="http://cseweb.ucsd.edu/~slovett/home.html">Shachar Lovett</a> (TBD)</p>
+<p><a class="reference external" href="http://cseweb.ucsd.edu/~slovett/home.html">Shachar Lovett</a>
+&#8220;The Decision Tree Complexity of k-SUM is Near-Linear&#8221;</p>
+<p>The 3-SUM problem asks, given <span class="math">\(n\)</span> real numbers <span class="math">\(x_1,\dots,x_n\)</span>, whether there exist <span class="math">\(3\)</span>
+of them that sum to zero. There is a trivial algorithm that solves it in <span class="math">\(O(n^2)\)</span>
+time, and the best algorithm to date only improves upon it in logarithmic
+terms. A significantly better algorithm is believed to be impossible (or at
+least very surprising).</p>
+<p>We show that in the linear decision tree model, 3-SUM has an <span class="math">\(O(n polylog(n))\)</span>
+algorithm. A linear decision tree is an adaptive algorithm which makes linear
+queries of the form &#8220;<span class="math">\(\sum a_i x_i&gt;0\)</span>?&#8221; to the input <span class="math">\(x\)</span>, and at the end decides
+whether a 3-SUM exists. Moreover, the type of queries we use are only label
+queries of the form &#8220;<span class="math">\(x_i+x_j+x_k&gt;0\)</span>?&#8221; or comparison queries of the form
+&#8220;<span class="math">\(x_i+x_j+x_k&gt;x_a+x_b+x_c\)</span>?&#8221;. Thus, the queries are all 6-sparse linear queries
+with <span class="math">\(\{-1,0,1\}\)</span> coefficients. More generally, for any constant <span class="math">\(k\)</span>, we get a linear
+decision tree for k-SUM which makes <span class="math">\(O(n polylog(n))\)</span> queries which are each
+<span class="math">\(2k\)</span>-sparse with <span class="math">\(\{-1,0,1\}\)</span> coefficients. This matches a lower bound of Ailon and
+Chazelle, and improved upon previous work of Gronlund and Pettie which gave an
+<span class="math">\(O(n^{k/2})\)</span> linear decision tree for k-SUM.</p>
+<p>The proof is based on a connection between the linear decision trees model and
+active learning. Specifically, it builds upon a new combinatorial notion
+introduced by the authors in previous work of &#8220;inference dimension&#8221;.</p>
+<p>Joint work with Daniel Kane and Shay Moran.</p>
 <p><em>Lightning talk.</em> (TBD)</p>
 </div>
 <div class="section" id="tuesday-may-2nd">
