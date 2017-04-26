@@ -233,12 +233,23 @@ introduced by the authors in previous work of "inference dimension".
  
 Joint work with Daniel Kane and Shay Moran.
 
-*Lightning talk.* (TBD)
 
 Tuesday, May 2nd
 ----------------
 
-`Caroline Terry <http://www.math.umd.edu/~cterry/>`_ (TBD)
+`Caroline Terry <http://www.math.umd.edu/~cterry/>`_
+"Structure and enumeration theorems for hereditary properties of L-structures"
+
+The study of structure and enumeration for hereditary graph properties has been
+a major area of research in extremal combinatorics.  Over the years such
+results have been extended to many combinatorial structures other than graphs.
+This line of research has developed an informal strategy for how to prove these
+results in various settings.  In this talk we use tools from model theory to
+formalize this strategy. In particular, we generalize certain definitions,
+tools, and theorems which appear commonly in approximate structure and
+enumeration theorems in extremal combinatorics.  Our results apply to classes
+of finite L-structures which are closed under isomorphism and model-theoretic
+substructure, where L is any finite relational language.
 
 *Lightning talk.* (TBD)
 
